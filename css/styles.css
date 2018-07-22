@@ -183,6 +183,7 @@ nav h1 a:hover {
   display: block;
   margin: 0;
   max-width: 270px;
+  max-height: 202.5px; 
 }
 #restaurants-list li h2 {
   color: #333;
