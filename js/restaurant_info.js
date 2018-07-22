@@ -2,23 +2,10 @@ let restaurant;
 var newMap;
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  registerServiceWorker();
   initMap();
 });
 
-registerServiceWorker = () => {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
-}
+
 
 /**
  * Initialize Google map, called from HTML.
