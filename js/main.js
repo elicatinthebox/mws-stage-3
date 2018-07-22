@@ -9,26 +9,14 @@ var markers = []
  */
 document.addEventListener('DOMContentLoaded', (event) => {
 
-  registerServiceWorker();
+ 
   fetchNeighborhoods();
   fetchCuisines();
   initMap();
 });
 
 
-registerServiceWorker = () => {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
-}
+
 
 /**
  * Fetch all neighborhoods and set their HTML.
