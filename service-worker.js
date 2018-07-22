@@ -17,6 +17,7 @@
           '/img/8.webp',
           '/img/9.webp',
           '/img/10.webp',
+          '/js/idb.js',                 
           '/js/dbhelper.js',
           '/js/restaurant_info.js',
           '/data/restaurants.json'
